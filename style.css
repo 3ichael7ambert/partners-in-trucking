@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background: #f4f4f4;
+  }
+  
+  header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #002b45;
+    color: white;
+  }
+  
+  section {
+    margin: 40px 0;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .apply-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #005599;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Truck Scrollers */
+  .scroll-truck {
+    position: fixed;
+    width: 100px;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.2;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .scroll-truck.left {
+    top: 20%;
+    left: 0;
+  }
+  
+  .scroll-truck.right {
+    bottom: 20%;
+    right: 0;
+  }
+  
+  /* Responsive Enhancements */
+  @media (min-width: 768px) {
+    section {
+      max-width: 700px;
+      margin: 40px auto;
+    }
+  
+    .scroll-truck {
+      width: 140px;
+      opacity: 0.4;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      padding: 40px;
+    }
+  }
+  
